@@ -17,4 +17,5 @@ ggplot(filter(freqData, freq > 0), aes(x = parent, y = child)) +
     scale_size(range = c(2, 20)) +
     geom_point(color = "grey50", aes(size = freq + 10, )) +
     geom_point(aes(color = freq, size = freq)) +
-    scale_color_gradient(low = "lightblue", high = "white")
+    scale_color_gradient(low = "lightblue", high = "white") +
+    geom_smooth(method = "lm", formula = y ~ x, se = FALSE)
