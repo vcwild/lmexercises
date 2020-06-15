@@ -16,15 +16,12 @@ ggplot(dat, aes(y = y, x = x1, color = x2)) +
     geom_point(color = "grey50", size = 3) +
     geom_point(size = 2)
     
-
 # Residual plot -----------------------------------------------------------
 
 ggplot(dat, aes(y = ey, x = ex1, color = x2)) +
     geom_smooth(method = "lm", se = FALSE, color = "black") +
     geom_point(color = "grey50", size = 3) +
     geom_point(size = 2)
-
-
 
 # Unnecessary variable created ---------------------------------------------------
 
