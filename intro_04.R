@@ -4,6 +4,7 @@ library(manipulate)
 library(dplyr)
 data("galton")
 
+
 myPlot<-function(beta){
     y<-galton$child-mean(galton$child)
     x<-galton$parent-mean(galton$parent)
