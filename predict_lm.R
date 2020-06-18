@@ -2,6 +2,7 @@ library(UsingR)
 library(ggplot2)
 data("diamond")
 
+-
 
 ggplot(diamond, aes(carat, price)) + 
     geom_point(size = 6, color = "black", alpha = 0.2) +
