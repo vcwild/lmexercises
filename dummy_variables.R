@@ -5,6 +5,7 @@ require(datasets)
 data("InsectSprays")
 require(stats)
 
+
 ggplot(InsectSprays, aes(y = count, x = spray, fill = spray)) + 
     geom_violin(color = "black", size = 1) +
     labs(x = "Type of spray", y = "Insect count")
