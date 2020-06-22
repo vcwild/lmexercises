@@ -29,6 +29,7 @@ coefTable
 
 # Using rstat library ---------------------------------------------------------
 
+
 fit <- lm(y ~ x)
 summary(fit)$coefficients
 
