@@ -8,7 +8,6 @@ y = mtcars$mpg
 
 fit <- lm(y ~ x)
 unit <- lm(y ~ 1)
-
 num <- sum((predict(fit) - y)^2)
 denom <- sum((predict(unit) - y)^2)
 
